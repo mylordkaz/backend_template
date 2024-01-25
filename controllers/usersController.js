@@ -1,3 +1,5 @@
+// Handle the user route logic here.
+
 const getUser = (req, res) => {
   res.send('This is a user route');
 };

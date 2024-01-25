@@ -1,3 +1,5 @@
+// create a schema for users table implementation.
+
 const userSchema = (table) => {
   table.increments('id').primary().uniaue();
   table.string('username').notNullable();

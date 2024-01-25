@@ -3,7 +3,8 @@
  * @returns { Promise<void> }
  */
 
-// this is running with { npx knex migrate:latest}
+// this is running with { npx knex migrate:latest }
+// this script is used to implement all the schemas for the schemas folder.
 
 exports.up = function (knex) {
   return knex.schema.createTable('users', require('./schemas/users'));

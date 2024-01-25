@@ -6,6 +6,8 @@ const bcrypt = require('bcryptjs');
 const salt = bcrypt.genSaltSync(10);
 const hash = bcrypt.hashSync('Password', salt);
 
+// Exemple of a user seed for the database.
+
 exports.seed = async function (knex) {
   // Deletes ALL existing entries
   await knex('table_name').del();

@@ -12,6 +12,7 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 
+//use the route from here
 const startServer = () => {
   app.use('/users', usersRoute);
   app.get('/', (req, res) => {
