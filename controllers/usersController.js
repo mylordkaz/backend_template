@@ -3,7 +3,8 @@ const getUser = (req, res) => {
 };
 
 const getUserById = (req, res) => {
-  const userId = req.params.userIdres.send(`this is user ${userId} route`);
+  const userId = req.params.userId;
+  res.send(`this is user ${userId} route`);
 };
 
 module.exports = { getUser, getUserById };
